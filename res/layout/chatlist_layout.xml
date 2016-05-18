@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout1"
+        android:layout_weight="1"
+        android:layout_marginLeft="10.0dip" 
+		android:layout_marginTop="10.0dip" 
+		android:layout_marginRight="10.0dip"
+    	android:divider="@null"
+    	android:dividerHeight="5dp"
+    	android:scrollbars="none"
+    	android:cacheColorHint="#00000000"/>
+
+"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout1"
+        android:layout_height="match_parent"
+        android:background="#f0f0e0"
+        android:orientation="horizontal" 
+        android:layout_weight="9">
+
+        <com.gy.widget.Image.CircleImageView
+            android:id="@+id/startrec"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/speech" />
+
+        <com.gy.materialedittext.MaterialEditText
+            android:id="@+id/content"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"
+            android:ems="10"
+            android:gravity="center_vertical|bottom" >
+
+        </com.gy.materialedittext.MaterialEditText>
+
+        <com.gy.materialdesign.views.ButtonFlat
+            android:id="@+id/send"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="发送" >
+        </com.gy.materialdesign.views.ButtonFlat>
+    </LinearLayout>
+
+</LinearLayout>
