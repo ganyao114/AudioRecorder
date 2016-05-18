@@ -1,0 +1,13 @@
+com.gy ---------自定义控件集合
+com.just.AudioRecorder -----项目包
+com.just.AudioRecorder.ui -----用户界面层接口
+com.just.AudioRecorder.ui.impl ------用户界面实现类
+com.just.AudioRecorder.ui.adapter -----用户界面控件数据适配器
+com.just.AudioRecorder.Dao ----- 数据层接口
+com.just.AudioRecorder.Dao.impl ----- 数据层实现
+com.just.AudioRecorder.Dao.Bean ----- 数据层Bean集合
+com.just.AudioRecorder.Service ----- 业务逻辑层接口
+com.just.AudioRecorder.Service.impl ----- 业务逻辑层实现
+com.just.AudioRecorder.Service.Thread ----- 业务逻辑层子线程集合
+com.just.AudioRecorder.Service.Thread.Templet ----- 业务逻辑层子线程模板(二次封装Runnable接口与异常处理)
+com.just.AudioRecorder.utils ----- 公共工具类

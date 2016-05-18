@@ -1,0 +1,38 @@
+			所有集合型数据由JSON封装
+
+
+1.登陆
+action:LoginServlet
+args:(LoginName,LoginPassword)
+return:!null
+2.注册
+action:RegestServlet
+args:(LoginServlet,LoginPassword,Mail)
+return:!null
+3.获取在线用户列表
+action:GetUserListOnline
+args:(LoginName)
+return:UserListOline:JsonArray --> [①,②,③]  ①-->{LoginName,Mail}
+4.创建房间
+action:CreateRoom
+args:(LoginName,RoomName,GuestList:JsonArray) JsonArray --> [①,②,③]  ①-->{LoginName,Mail}
+return:!null
+5.接受邀请
+action:AcceptRequest
+args:(LoginName,RoomName)
+6.房主结束录音
+action:StopRecorder
+args:(LoginName,RoomName)
+return:!null
+7.2S请求一次
+action:GetRequest
+args:(LoginName)
+return:
+①.受邀请的通知:(LoginName,RoomName)
+②.聊天室消息更新:(MsgList:JsonArray)
+③.录音结束通知:(stoped)
+④.房间内人员更新:(AcceptRequestGests:JsonArray)
+8.发送消息
+action:SendMsg
+args:(LoginName,Msg) Msg-->MssageBean
+return:!null
